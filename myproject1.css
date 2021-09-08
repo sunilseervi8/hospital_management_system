@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+/* ------------------- PARALLAX SCROLL ------------------*/
+
+.sect {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.sectOne {
+  background-image: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240");
+}
+
+.sectTwo {
+  background-image: url("https://images.unsplash.com/photo-1449024540548-94f5d5a59230?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dec4b59ca06926527007bd98670f2800");
+}
+
+.sectThree {
+
+  
+  background-image: url("https://images.unsplash.com/photo-1434871619871-1f315a50efba?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3281bb702a6886af18829c77bb47d103");
+}
+
+
+/* ------------------- END PARALLAX SCROLL ------------------*/
+
+
+/* ------------------- NAVIGATION ------------------*/
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  line-height: 50px;
+  font-size: 120%;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav ul {
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+h1 {
+  color: black;
+}
+
+.handle {
+  width: 100%;
+  background: aqua;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* ------------------- END NAVIGATION ------------------*/
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: aqua;
+}
+
+button:hover {
+  background-color: orange;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.1s ease-in-out;
+  margin-left: -6px;
+  margin-top: -3px;
+}
+
+
+/* ------------- GRID CSS ------------- */
+
+
+/*  SECTIONS  */
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */
+}
+
+
+/*  GRID OF TWO  */
+
+.span_2_of_2 {
+  width: 100%;
+}
+
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+
+/* ----------- */
+
+.span_1_of_1 {
+  width: 100%;
+}
+
+.span_1_of_1 {
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3 {
+    width: 100%;
+  }
+  .span_1_of_1 {
+    margin-top: 30%;
+  }
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+  }
+  nav ul {
+    max-height: 0px;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+  .handle {
+    display: block;
+  }
+  .wrapper {
+    width: 150px;
+    height: 110px;
+  }
+  .content {
+    width: 150px;
+    height: 110px;
+  }
+}

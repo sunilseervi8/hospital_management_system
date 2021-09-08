@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+}
+ .banner-text{
+   width: 100%;
+   position: absolute;
+ }
+ .banner-text ul{
+   height: 50px;
+   float: right;
+ }
+ .banner-text ul li{
+   display: inline-block;
+   padding: 50px 15px;
+   text-transform: uppercase;
+   color: #000;
+   font-size: 20px;
+ }
+ .banner-text h2{
+   text-align: center;
+   color: #000;
+   font-size: 50px;
+   margin-top: 0.5%;
+
+   float: center;
+ }
+ .animation{
+  background: linear-gradient(to left,green,#66ccff);
+  width: 100%;
+  height: 100vh;
+}
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 0 0 0;
+    border-radius:20px;
+}
